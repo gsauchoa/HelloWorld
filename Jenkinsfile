@@ -4,18 +4,24 @@ pipeline{
   
   stages{
   
-    stage("build"){
-      steps{
-        echo 'build da aplicacao'
+    stage("build")
+    {
+            steps{
+              echo 'build da aplicacao'
+            }
       }
-       stage("teste"){
+     stage("teste")
+    {
       steps{
         echo 'teste da aplicacao'
-      }
-       stage("deploy"){
+            }
+     }
+      stage("deploy")
+    {
       steps{
         echo 'deploy da aplicacao'
-      }
+          }
+    }
     
     }
   }
