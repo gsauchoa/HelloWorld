@@ -1,11 +1,11 @@
 pipeline
 {
-	  agent any
-	  stages 
+	agent any
+	stages 
     {
-      stage("build") { steps{ sh 'mvn package' } }
+      stage("Buildando") { steps{ sh 'mvn package' } }
       stage("teste") { steps{ echo " testando aplicacao"  } }
-      stage("deploy"){ steps{ sh 'startup.sh'  } }
+      stage("Implantacao"){ steps{ sh 'startup.sh'  } }
      
     }
 }
